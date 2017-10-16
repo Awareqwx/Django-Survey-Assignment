@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Survey</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'surveyApp/css/style.css'%}">
+    </head>
+    <body>
+        <div id="resultbox">
+            <h4 id="resultheader">Submitted Information:</h4>
+            <p>Name: {{name}}</p>
+            <p>Dojo Location: {{location}}</p>
+            <p>Favorite Language: {{language}}</p>
+            <p>Comment: {{comment}}</p>
+            <form action="back/"><input type="submit" value="Back"></form>
+        </div>
+    </body>
+</html>
